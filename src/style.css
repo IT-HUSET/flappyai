@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: #4cc9d7; /* Flappy Bird blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+canvas {
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+/* Frame wrapper around canvas */
+.frame-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Screenshot guide frame */
+.screenshot-frame {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 924px;  /* 864 + 40 */
+  height: 636px; /* 576 + 40 */
+  border: 2px dashed red;
+  box-sizing: border-box;
+  pointer-events: none;
+}
